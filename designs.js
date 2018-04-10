@@ -1,18 +1,19 @@
-// Select color input
+// STEP 1 Select color and size input
+
 const pickColor = $('#colorPicker');
+const colVal = document.getElementById('colorPicker').value;
 /*
 jQueried from
 const pickColor = document.getElementById("colorPicker");
+const newRow = document.createElement('tr');
+const newColumn = document.createElement('td');
 */
-
-// Select size input
-
 const inputHeight = $('#inputHeight'); // jQueried
 const inputWidth = $('#inputWidth'); // jQueried
 const pickTable = $('#pixelCanvas'); // jQueried
-// const newRow = document.createElement('tr');
-// const newColumn = document.createElement('td');
 
+/* STEP 2 Create makeGrid tr - how many rows = how big height,
+inside every row/tr we need td elements = for inside for */
 function makeGrid() {
 
 for (let i=0; i<inputHeight.val(); i++) {
@@ -23,31 +24,16 @@ for (let i=0; i<inputHeight.val(); i++) {
     }
 }
 
-// When size is submitted by the user, call makeGrid()
+// STEP 3 When size is submitted by the user, call makeGrid()
 
-$("form").submit(function(e){
+$('#sizePicker').submit(function(e){
     pickTable.empty();   //children().remove();
     e.preventDefault();
     makeGrid();
-    alert("Submitted");
-
-
 });
 
-/*
-document.getElementById('sizePicker').click(function (e){
-e.preventDefault();
-makeGrid();
-});
+//STEP 4
 
-function makeGrid() {
-    document.getElementById('sizePicker').submit();
- $('form').submit ( makeGrid())
- $('form').submit(function() {
-   makeGrid();
- });
-*/
-
-
-
-// Your code goes here!
+pickTable.on("click", "td", function() {
+    $(this).css("background-color", pickColor.val());
+  });
