@@ -7,10 +7,10 @@
 
 ## Instructions
 
-To get started, open `designs.js` and start building out the app's functionality.
+To get started, open `index.html` and start playing!
 
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
+It was made based on instructions, from [Udacity Classroom](https://classroom.udacity.com/me).
 
 ## Contributing
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+This repository is the v 1.0 of Pixel Art Maker project and is going to be part of my portfolio. Therefore, I will not accept pull requests.
