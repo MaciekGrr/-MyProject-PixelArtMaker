@@ -7,7 +7,7 @@
 
 ## Instructions
 
-To get started, open `index.html` and start playing!
+To get started, download whole folder, open `index.html` and start playing!
 
 It was made based on instructions, from [Udacity Classroom](https://classroom.udacity.com/me).
 
